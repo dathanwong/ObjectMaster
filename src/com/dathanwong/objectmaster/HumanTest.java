@@ -7,6 +7,16 @@ public class HumanTest {
 		Human john = new Human("John");
 		Human bob = new Human("Bob");
 		john.attack(bob);
+		Wizard gandalf = new Wizard("Gandalf");
+		gandalf.heal(john);
+		gandalf.fireball(john);
+		Ninja joe = new Ninja("Joe");
+		joe.steal(gandalf);
+		joe.runAway();
+		Samurai jack = new Samurai("Jack");
+		jack.deathBlow(bob);
+		jack.meditate();
+		System.out.println("There are " + Samurai.howMany() + " Samurai");
 	}
 
 }
